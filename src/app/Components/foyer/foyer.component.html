@@ -1,0 +1,4 @@
+ <p>total Chambre={{nbchambretotal}}</p>
+ <div class="inlineElements" *ngFor="let i of getListBloc(); let index = index">
+<app-bloc [numero]="index+1" (totalchambre)="totalChambre($event)"></app-bloc>
+</div>

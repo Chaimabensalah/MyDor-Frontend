@@ -1,0 +1,93 @@
+<mat-sidenav-container class="dashboard-container">
+  <mat-sidenav mode="side" opened>
+    <mat-toolbar>Admin Panel</mat-toolbar>
+    <mat-nav-list>
+      <mat-list-item><mat-icon>home</mat-icon> Dashboard</mat-list-item>
+      <mat-list-item><mat-icon>room</mat-icon> Rooms Management</mat-list-item>
+      <mat-list-item><mat-icon>book</mat-icon> Reservations</mat-list-item>
+      <mat-list-item><mat-icon>exit_to_app</mat-icon> Logout</mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">Dormitory Dashboard</mat-toolbar>
+    <div class="dashboard-content">
+      <!-- Dormitory Overview Section -->
+      <mat-card class="overview-card">
+        <mat-card-header>
+          <mat-card-title>Dormitory Overview</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p><strong>Dormitory Name:</strong> Dormitory A</p>
+          <p><strong>Address:</strong> 123 Main St, City</p>
+          <p><strong>Total Rooms:</strong> 50</p>
+          <p><strong>Available Rooms:</strong> 10</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="openDialog2()">Edit Dormitory Info</button>
+        </mat-card-actions>
+      </mat-card>
+
+      <!-- Room Management Section -->
+      <div class="room-management">
+        <mat-card class="room-card">
+          <mat-card-header>
+            <mat-card-title>Rooms Management</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>Manage rooms: Add, update, or delete room information.</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="accent" (click)="openDialog1()">Add Room</button>
+            <button mat-raised-button color="primary" routerLink="/adminroomlist">View Rooms</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <!-- Reservations Section -->
+      <div class="reservation-management">
+        <mat-card class="reservation-card">
+          <mat-card-header>
+            <mat-card-title>Reservations</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>Manage reservations: View, approve, or cancel reservations.</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="primary">View Reservations</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+   <!-- bloc Management Section -->
+   <div class="room-management">
+    <mat-card class="room-card">
+      <mat-card-header>
+        <mat-card-title>bloc Management</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Manage bloc: Add, update, or delete bloc information.</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="accent" (click)="openDialog3()">Add Bloc</button>
+        <button mat-raised-button color="primary" routerLink="/adminroomlist">View Bloc</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+      <!-- Statistics Section -->
+      <div class="stats-card">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Dormitory Statistics</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>Occupancy Rate: 80%</p>
+            <p>Upcoming Reservations: 5</p>
+            <p>Revenue This Month: $5,000</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

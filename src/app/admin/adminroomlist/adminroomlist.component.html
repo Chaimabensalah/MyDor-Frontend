@@ -1,0 +1,59 @@
+<br>
+<div class="room-list-container">
+  <h2>Room List</h2>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search rooms..." />
+  </div>
+
+  <!-- Select Bar for Filtering by Block -->
+  <div class="filter-bar">
+    <label for="block-select">Filter by Block:</label>
+    <select id="block-select">
+      <option value="">All Blocks</option>
+      <option value="A">Block A</option>
+      <option value="B">Block B</option>
+      <option value="C">Block C</option>
+      <!-- Add more options as needed -->
+    </select>
+  </div>
+
+  <div class="room-table">
+    <div class="room-row header">
+      <div class="room-cell">Room Number</div>
+      <div class="room-cell">Block</div>
+      <div class="room-cell">Actions</div>
+    </div>
+
+    <!-- Example Row 1 -->
+    <div class="room-row">
+      <div class="room-cell">101</div>
+      <div class="room-cell">A</div>
+      <div class="room-cell">
+        <button class="edit-button">Edit</button>
+        <button class="delete-button">Delete</button>
+      </div>
+    </div>
+
+    <!-- Example Row 2 -->
+    <div class="room-row">
+      <div class="room-cell">102</div>
+      <div class="room-cell">A</div>
+      <div class="room-cell">
+        <button class="edit-button">Edit</button>
+        <button class="delete-button">Delete</button>
+      </div>
+    </div>
+
+    <!-- Example Row 3 -->
+    <div class="room-row">
+      <div class="room-cell">201</div>
+      <div class="room-cell">B</div>
+      <div class="room-cell">
+        <button class="edit-button">Edit</button>
+        <button class="delete-button">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

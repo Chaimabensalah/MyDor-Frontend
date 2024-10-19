@@ -1,0 +1,61 @@
+<h2>Choose your Room</h2>
+<div class="search-form">
+  <select id="room-category">
+    <option value="">--Select Category--</option>
+    <option value="monome">Monome</option>
+    <option value="binome">Binome</option>
+    <option value="trinome">Trinome</option>
+  </select>
+
+<div class="container">
+  <ul class="responsive-table">
+    <li class="table-header">
+      <div class="col col-1"></div>
+      <div class="col col-2">Numero</div>
+      <div class="col col-3">Amount Due</div>
+      <div class="col col-4">Category</div>
+      <div class="col col-5">Etat</div>
+      <div class="col col-5">action</div>
+
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Job Id">
+        <img src="assets/room0.jpg" alt="Job Image" class="job-image">
+      </div>
+      <div class="col col-2" data-label="Customer Name">201</div>
+      <div class="col col-3" data-label="Amount">$350</div>
+      <div class="col col-4">Binome</div>
+      <div class="col col-5">free</div>
+      <button class="button" (click)="openDialog()">Reservé</button>
+
+
+    </li>
+
+    <li class="table-row">
+      <div class="col col-1" data-label="Job Id">
+        <img src="assets/room3.jpg" alt="Job Image" class="job-image">
+      </div>
+      <div class="col col-2" data-label="Customer Name">25</div>
+      <div class="col col-3" data-label="Amount">$350</div>
+      <div class="col col-4">Binome</div>
+      <div class="col col-5">free</div>
+      <button class="button">Reservé</button>
+
+
+    </li>
+
+    <li class="table-row">
+      <div class="col col-1" data-label="Job Id">
+        <img src="assets/room2.jpg" alt="Job Image" class="job-image">
+      </div>
+      <div class="col col-2" data-label="Customer Name">01</div>
+      <div class="col col-3">$350</div>
+      <div class="col col-4">Monome</div>
+      <div class="col col-5">Reservé</div>
+      <button class="button">Reservé</button>
+
+
+    </li>
+
+  </ul>
+</div>

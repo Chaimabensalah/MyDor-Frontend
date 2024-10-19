@@ -1,0 +1,102 @@
+<!--<p>directives works!</p>
+<div *ngIf="mylist.length > 0 then notempty else empty"> </div>
+<ng-template #notempty>
+<p>list non vide</p>
+</ng-template>
+
+<ng-template #empty>
+  <p>list vide</p>
+  </ng-template>
+
+  <div [hidden]="mylist.length > 0">
+    <p>list vide</p>
+  </div>
+
+
+  <div [hidden]="mylist.length == 0">
+    <p>list non vide</p>
+  </div>
+
+  <ul>
+     <li [class.active]="activee=='bloc'"><a (click)="activee = 'bloc'">bloc</a></li>
+     <li [class.active]="activee=='chambre'"><a (click)="activee = 'chambre'">chambre</a></li>
+     <li [class.active]="activee=='foyer'"><a (click)="activee = 'foyer'">foyer</a></li>
+  </ul>
+
+  <div [ngSwitch]="activee">
+    <div *ngSwitchCase="'bloc'">bloc1</div>
+    <div *ngSwitchCase="'chambre'">chambre1</div>
+    <div *ngSwitchCase="'foyer'">foyer1</div>
+    <div *ngSwitchDefault>default</div>
+  </div>
+<hr>
+  <div>
+    <ul>
+      <li *ngFor="let i of mylist ; let index=index ; even as e ; first as f ; last as l">
+        <span *ngIf="e">even</span>/
+        <span *ngIf="f">first</span>/
+        <span *ngIf="l">last</span>/
+        index:{{index}}/
+        type : {{i}}
+      </li>
+    </ul>
+  </div>-->
+
+<div class="container">
+
+  <h1 class="text-center mt-5 text-dark">HERO APP</h1>
+
+  <div class="row">
+
+    <div class="col-3">
+      <input type="text" class="form-control m-1" placeholder="name" [(ngModel)]="hero.name">
+    </div>
+
+
+    <div class="col-3">
+      <input type="text" class="form-control m-1" placeholder="power" [(ngModel)]="hero.power">
+    </div>
+
+
+    <div class="col-3">
+      <input type="text" class="form-control m-1" placeholder="image url" [(ngModel)]="hero.image">
+    </div>
+
+
+    <div class="col-3">
+      <button type="text" class="btn form-control m-1" (click)=add() >Create</button>
+    </div>
+  </div>
+
+
+
+
+  <div class="row mt-5">
+<!--div1-->
+    <div class="col-3" *ngFor="let i of heros">
+
+      <div [ngClass]="{'card p-1':true , 'hight':i.power>100 , 'medium':i.power<100  && i.power>50, 'low':i.power<50}" >
+        <div class="card-image">
+          <img class="w-100" [src]="i.image" alt="">
+        </div>
+        <div class="card-body">
+         <h2> {{i.name}}</h2>
+         <p>{{i.power}}</p>
+        </div>
+
+          <div class="card-image">
+            <img src="" alt="">
+          </div>
+
+      </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+
+<form [formGroup]="chambreform" (ngSubmit)="submit()">
+  <div class="input-group mb-3">
+    <select class="custom-select" id="inputGroupSelect01">
+      <option selected>choisir Bloc</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="idChambre">id Chambre</label>
+<input type="number" class="form-control" id="idChambre" formControlName="idChambre" [disabled]="true">
+  </div>
+  <div class="form-group">
+    <label for="numeroChambre">numero Chambre</label>
+    <input type="number" class="form-control" id="numeroChambre" formControlName="numeroChambre" placeholder="entrer le numero de Chambre">
+  </div>
+  <div class="input-group mb-3">
+    <select class="custom-select" id="typeC" formControlName="typeC">
+      <option selected value="TRIPLE">TRIPLE</option>
+      <option value="DOUBLE">DOUBLE</option>
+      <option value="SIMPLE">SIMPLE</option>
+    </select>
+  </div>
+
+  <!--teb3in login-->
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" formControlName="email" placeholder="Enter email">
+    <div class="invalid" *ngIf="email?.hasError('required') && (email?.touched || email?.dirty)">
+      email is require
+    </div>
+    <div class="invalid" *ngIf="email?.hasError('email') && (email?.touched || email?.dirty)">
+      email not valid
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" formControlName="password" placeholder="Password">
+  </div>
+  <div class="invalid" *ngIf="password?.hasError('required') && (password?.touched || password?.dirty)">
+    password is require
+  </div>
+  <div class="invalid" *ngIf="password?.hasError('minlength')">
+    min length 8
+  </div>
+  <div class="invalid" *ngIf="password?.hasError('pattern')">
+    not valid(1-8 / A-Z)
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <a type="submit" class="btn btn-primary" routerLink="/home">Submit</a>
+
+</form>

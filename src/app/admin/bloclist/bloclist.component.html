@@ -1,0 +1,60 @@
+<p>bloclist works!</p>
+<br>
+<div class="room-list-container">
+  <h2>  Bloc List</h2>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search bloc..." />
+  </div>
+
+  <!-- Select Bar for Filtering by Block -->
+  <div class="filter-bar">
+    <label for="block-select">Filter avec etage:</label>
+    <select id="block-select">
+      <option value="">tout les etage</option>
+      <option value="A">etage 1</option> 
+      <option value="B">etage 2</option>
+      <option value="C">etage 3</option>
+      <!-- Add more options as needed -->
+    </select>
+  </div>
+
+  <div class="room-table">
+    <div class="room-row header">
+      <div class="room-cell">Bloc Number</div>
+      <div class="room-cell">Block</div>
+      <div class="room-cell">Actions</div>
+    </div>
+
+    <!-- Example Row 1 -->
+    <div class="room-row">
+      <div class="room-cell">101</div>
+      <div class="room-cell">A</div>
+      <div class="room-cell">
+        <button class="edit-button">Edit</button>
+        <button class="delete-button">Delete</button>
+      </div>
+    </div>
+
+    <!-- Example Row 2 -->
+    <div class="room-row">
+      <div class="room-cell">102</div>
+      <div class="room-cell">A</div>
+      <div class="room-cell">
+        <button class="edit-button">Edit</button>
+        <button class="delete-button">Delete</button>
+      </div>
+    </div>
+
+    <!-- Example Row 3 -->
+    <div class="room-row">
+      <div class="room-cell">201</div>
+      <div class="room-cell">B</div>
+      <div class="room-cell">
+        <button class="edit-button">Edit</button>
+        <button class="delete-button">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

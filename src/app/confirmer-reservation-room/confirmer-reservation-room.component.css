@@ -1,0 +1,66 @@
+.form-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h4 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="button"] {
+  background-color: #ccc;
+  color: #333;
+}
+
+button[type="submit"] {
+  background-color: #a527ee;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #d97bfe;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #d97bfe;
+  transform: translateY(0);
+}
+/* Container to group images */
+.image-group {
+  display: flex; /* Aligns the images next to each other */
+  gap: 20px; /* Adds space between the images */
+  justify-content: center; /* Centers the image group */
+  align-items: center;
+}
+
+/* Styling for images */
+.card-img {
+  width: 150px; /* Set a fixed width for the images */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 8px; /* Optional: adds rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds shadow */
+}

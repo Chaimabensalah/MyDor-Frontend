@@ -1,0 +1,21 @@
+<h2 mat-dialog-title></h2>
+<form>
+  <mat-form-field appearance="fill">
+    <mat-label>Room Number</mat-label>
+    <input matInput formControlName="numeroChambre" required>
+    <mat-error>
+      Room Number is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Room Type</mat-label>
+    <input matInput formControlName="typeC" required>
+    <mat-error>
+      Room Type is required
+    </mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button type="submit">Submit</button>
+  <button mat-button (click)="closeDialog()">Cancel</button>
+</form>

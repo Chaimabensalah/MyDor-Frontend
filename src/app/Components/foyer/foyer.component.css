@@ -1,0 +1,5 @@
+.inlineElements{
+  display: flex;
+  flex-wrap: wrap; /* Allows the elements to wrap if the container is too small */
+  gap: 10px; /* Adds space between the elements */
+}

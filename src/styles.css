@@ -1,0 +1,22 @@
+/* Core styles that are independent from the theme */
+html, body { height: 100%; }
+body {
+  margin: 0;
+}
+
+/* Example of the dark theme styles */
+.theme-dark {
+  /* Replace with actual dark theme styles */
+  background-color: #303030; /* Assume dark background */
+  color: #ffffff; /* Assume light text */
+}
+
+/* Example of the light theme styles */
+.theme-light {
+  /* Replace with actual light theme styles */
+  background-color: #ffffff; /* Assume light background */
+  color: #000000; /* Assume dark text */
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
